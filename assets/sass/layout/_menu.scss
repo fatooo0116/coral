@@ -1,0 +1,16 @@
+#poki-navi{
+  position: fixed;
+  width:100%;
+  height:100%;
+  left:-100vw;
+  top:0;
+  z-index: 9;
+}
+
+#poki-navi.open{
+  left:0;
+}
+
+#Header_creative nav#poki-navi .box_table .box_inner .lang ul li.current-lang a{
+  color:#ee3038;
+}

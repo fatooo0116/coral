@@ -1,0 +1,51 @@
+body.logged-in{
+  // padding-top: 32px;
+
+  #Header_creative,{
+    top:32px;
+  }
+}
+
+
+
+body{
+  #page{
+    min-height:calc(100vh - 80px );
+  }
+
+
+
+  .site-footer{
+    bottom: 0;
+    left:50px;
+    text-align: center;
+    padding: 20px 0 30px;
+    .site-info{
+      font-size: 11px;
+      line-height: 20px;
+      color:#b3b3b3;
+      font-family: "helveticaneuethin","Noto Sans TC",sans-serif;
+    }
+  }
+
+
+  &.home{
+    .site-footer{
+        background: #1a1a1a;
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+  body.logged-in{
+    // padding-top: 32px;
+
+    #Header_creative{
+      top:46px;
+      width:100%;
+    }
+  }
+}

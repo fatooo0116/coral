@@ -1,0 +1,110 @@
+body{
+    #contactus{
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        z-index: 9990;
+        background: #1a1a1a;
+        left: 0;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        top:-200%;
+
+
+        a.cclose{
+          position: absolute;
+          right:10px;
+          top:10px;
+          display: block;
+          img{
+            height:30px;
+          }
+        }
+
+
+        .wpcf7{
+          max-width: 350px;
+          margin:auto;
+        }
+
+        .inner{
+          height: 100%;
+          display: flex;
+          align-content: center;
+          overflow-y: scroll;
+
+
+          form.wpcf7-form{
+            h3{
+              font-family: "helveticaneuethin","Noto Sans TC",sans-serif;
+                color:#fff;
+                text-align: center;
+                font-size: 1.75rem;
+                letter-spacing: 2px;
+            }
+            p{
+              margin:10px 0;;
+
+              label{
+                font-family: "helveticaneuethin","Noto Sans TC",sans-serif;
+                color:#fff;
+                font-size: 1rem;
+                span{
+                  color:#ee3038;
+                }
+              }
+              input{
+                width: 100%;
+                border:0px;
+                border-radius: 3px;
+                padding: 10px 10px;
+                font-family: "helveticaneuethin","Noto Sans TC",sans-serif;
+                margin-bottom: 12px;
+              }
+              .wpcf7-not-valid-tip{
+                font-family: "helveticaneuethin","Noto Sans TC",sans-serif;
+                  font-size: 0.8rem;
+              }
+              small{
+                font-family: "helveticaneuethin","Noto Sans TC",sans-serif;
+                font-size: 0.75rem;
+                color:#fff;
+                line-height: 1.4em;
+                display: block;
+              }
+            }
+            textarea{
+              height: 130px;
+              border-radius: 3px;
+              padding: 5px 10px;
+              border:0px;
+              font-family: "helveticaneuethin","Noto Sans TC",sans-serif;
+            }
+            input.wpcf7-submit{
+              font-family: "helveticaneuethin","Noto Sans TC",sans-serif;
+              padding: 1.2em 1em 1.2em;
+              background-color: #a7a9ac;
+              color:#000;
+              font-weight: 400;
+              font-size: 1rem;
+            }
+            div.wpcf7-response-output{
+              color:#fff;
+                  margin: 0 auto;
+              font-family: "helveticaneuethin","Noto Sans TC",sans-serif;
+            }
+          }
+
+
+        }
+    }
+}
+
+
+
+body.contact{
+  overflow: hidden;
+  #contactus{
+      top: 0;
+  }
+}

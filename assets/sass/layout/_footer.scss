@@ -1,0 +1,46 @@
+
+
+#bkmask{
+  background-image: url('../images/bkxx.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  width:100%;
+  height:110vh;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -2;
+
+  &:after{
+    content:" ";
+    position: fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    width:100%;
+    height:110vh;
+      animation: colorchange 10s infinite;; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 10s infinite;; /* Chrome and Safari */
+  }
+}
+
+@keyframes colorchange
+{
+  0%   {background: rgba(0,0,0,0.4);}
+  25%  {background: rgba(0,0,0,0.2);}
+  50%  {background: rgba(0,0,0,0.5);}
+  75%  {background: rgba(0,0,0,0.3);}
+  100% {background: rgba(0,0,0,0.4);}
+}
+
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: rgba(0,0,0,0.4);}
+  25%  {background: rgba(0,0,0,0.2);}
+  50%  {background: rgba(0,0,0,0.5);}
+  75%  {background: rgba(0,0,0,0.3);}
+  100% {background: rgba(0,0,0,0.4);}
+}

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/gothammedium/Gotham-Medium.otf');
+    src: url('fonts/gothammedium/Gotham-Medium.woff2') format('woff2'),
+         url('fonts/gothammedium/Gotham-Medium.woff') format('woff'),
+         url('fonts/gothammedium/Gotham-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamBook';
+	src: url('../fonts/GothamBook/Gotham-Book.eot');
+	src: local('GothamBook'),
+       url('../fonts/GothamBook/Gotham-Book.woff') format('woff'),
+       url('../fonts/GothamBook/Gotham-Book.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'GothamLight';
+	src: url('fonts/GothamLight/GothamLight.eot');
+	src: local('GothamLight'), url('../fonts/GothamLight/GothamLight.woff') format('woff'), url('../fonts/GothamLight/GothamLight.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: 'Gothambold';
+	src: url('fonts/gothambold/gothambold1.eot');
+	src: local('gothambold1'), url('../fonts/gothambold/gothambold1.woff') format('woff'), url('../fonts/gothambold/gothambold1.ttf') format('truetype');
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+
+body#tinymce.wp-editor {
+    font-family:  'GothamLight', 'Noto Sans TC', Helvetica, sans-serif;
+    margin: 10px;
+    background: #ececec;
+}
+
+body#tinymce.wp-editor a {
+    color: #4CA6CF;
+}
